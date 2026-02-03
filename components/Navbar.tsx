@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export const Navbar: React.FC = () => {
@@ -14,8 +13,6 @@ export const Navbar: React.FC = () => {
               RealEstate MPF
             </span>
           </div>
-          
-          {/* Menu items removed as requested */}
         </div>
       </div>
     </nav>

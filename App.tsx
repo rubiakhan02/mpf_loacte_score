@@ -122,15 +122,17 @@ function App() {
                 </p>
               </div>
               
-              <button 
-                onClick={downloadAnalysisJSON}
-                className="flex items-center gap-2 bg-white border border-slate-200 hover:border-blue-300 hover:bg-blue-50 text-slate-700 font-bold px-5 py-2.5 rounded-xl shadow-sm transition-all group shrink-0"
-              >
-                <svg className="w-5 h-5 text-blue-600 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-                Export JSON
-              </button>
+              <div className="flex flex-wrap items-center gap-3 shrink-0">
+                <button 
+                  onClick={downloadAnalysisJSON}
+                  className="flex items-center gap-2 bg-white border border-slate-200 hover:border-blue-300 hover:bg-blue-50 text-slate-700 font-bold px-5 py-2.5 rounded-xl shadow-sm transition-all group"
+                >
+                  <svg className="w-5 h-5 text-blue-600 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  Export JSON
+                </button>
+              </div>
             </div>
 
             <ScoreDisplay data={analysis} />
